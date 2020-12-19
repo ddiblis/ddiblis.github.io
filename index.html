@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- lang tag added as requested -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+
+  <body>
+
+    <header>
+      <h1>
+        Wafiq Al-Adwan
+      </h1>
+      <p>Software engineer/ man o’ the people</p>
+
+      <!-- I decided to add some nav buttons for ease of access to the different sections of the page, and for later addition of other pages-->
+
+      <nav>
+        <a class="buttons" href="#iam"> I am</a>
+        <a class="buttons" href="#aboutme"> About me</a>
+        <a class="buttons" href="#contactme"> Contact me</a>
+      </nav>
+    </header>
+
+    <br>
+
+    <main>
+      
+      <!-- Image curtosy of my gf since I don't take any of myself, with a fun alt -->
+
+      <!-- note: fixed alt error, apparently using "the image" in the alt of an inage is a nono -->
+
+      <div class="center">
+      
+        <img src="/images/image-of-me.jpg" alt="the man, the myth, the legend">
+        
+      </div>
+
+        <!-- I figured I'd throw in a few jokes with this part, the hello world and the unorganised list, both ps are managed with 2 classes that each modify the positioning and font size -->
+
+      <section>
+        <h2 id="iam">Hello, world! I’m Wafiq Al-Adwan!</h2>
+
+        <p class="center p2">I’m a software engineer based in Denver, Co.</p>
+
+        <p class="center p2">As a general purpose nerd my interests cannot be counted, so here’s an unorganised list of them: (hah get it?)</p>
+
+        <br>
+
+        <!-- I needed a specific class to manage the positioning on lists since they kind of look like a mess on their own, I needed them centred -->
+        <div>
+          <ul class="p1">
+
+          <li>Breaking things open</li>
+
+          <li>Putting things back together</li>
+
+          <li>Breaking things</li>
+
+          <li>Learning new programming languages just so I can say that I know them and never use them</li>
+
+          <li>Playing video games for way too long</li>
+
+          <li>Writing a piece of simple code then spending 17 hours adding more to it until I need to start a new project</li>
+
+          <li>And last but not least, turning something mundane into something fun</li>
+
+          </ul>
+
+
+        <!-- possibly a bit too much here but I wanted the email to actually force the open of a mail agent so that the sender would have an easier time of writing me an email instead of having to type out the email themselves -->
+
+        <p class="center"> Please feel free to email me at <a href="mailto:thealiengunner@gmail.com">thealiengunner@gmail.om</a>
+        </div>
+
+      </section>
+
+      <br>
+
+    <hr>
+
+    <section>
+      <h2 id="aboutme">About Wafiq</h2>
+
+      <!-- same p1 class applied here as well, that helps with positioning of the text -->
+      <article>
+      <p class="p1">
+        After graduating from higschool I felt aimless and went on to become a hairdresser for 3 years, through that job I met one of my now best friends who is a software engineer(one of his many titles) and we hit it off about all things nerdy, he gave me a love for coding and encouraged me to start my own coding projects, a year and a half later, I joined thinkful because despite having probably the skills to make it in the industry I don't do well on interviews and needed help with the getting a job aspect of this industry.<br>
+
+        <br>
+
+        Now here I am writing HTML in an office document so I can prove to myself that I can without the autocomplete, and making this webpage to encourage employers into hiring me, or fellow like minded people to join me on my journey, maybe even to go out to some convention once this pandemic business ends<br>
+
+        <br>
+
+        My interests stretch far and wide, and most likely if it's something unbearably nerdy, from food, to cars, to code, to gaming, to anime and manga, music instruments, and even electrical engineering, physics, chemistry, or history, then chances are I've spent at least a week of my life beyond obsessed with the subject and haven't let go of my fascination with it since.
+      </p>
+      </article>
+
+    </section>
+
+    <br>
+
+      <hr>
+
+      <section>
+        <h3 id="contactme">Contact me</h3>
+
+      <!-- More use of the center and p2 classes, for the sake of positioning and font sizing, I kept them separate since I might want to use one without the other in some cases -->
+
+        <p class="center p2">If you're interested in chatting or have any business inqueries then feel free to contact me at the links below</p>
+
+        <br>
+
+      <div>
+        <ol class="p1">
+
+          <!-- repeated use of the mailto object and the rest of the links to my social media accounts -->
+
+          <li>
+            <a href="https://www.linkedin.com/in/wafiq-al-adwan-147a44141">LinkedIn</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/ddiblis">Github</a>
+          </li>
+
+          <li>
+            <a href="mailto:thealiengunner@gmail.com">Email</a>
+          </li>
+        </ol>
+      </div>
+      </section>
+    </main>
+
+    <br>
+
+    <footer>
+
+      <!-- Nav left here as well as on the top for the sake of the user not having to scroll up once this is a bigger website -->
+
+      <nav>
+        <a class="buttons" href="#iam"> I am</a>
+        <a class="buttons" href="#aboutme"> About me</a>
+        <a class="buttons" href="#contactme"> Contact me</a>
+      </nav>
+      <p>
+        ©Wafiq Al-Adwan
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

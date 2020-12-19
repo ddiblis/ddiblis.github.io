@@ -1,0 +1,164 @@
+/* An imported font from google fonts, I wanted something light hearted and not taken too seriously, since I don't yet possess the ability to make this website look up to my standard of elegance and simplicity */
+
+@import url('https://fonts.googleapis.com/css?family=Langar&display=swap');
+
+/* classes first, a centring class that I can apply to certain objects in the HTML without worrying about conflicts
+
+A button class for the sake of my buttons, make it easier to unify them without having to write a thing for nav which I might need to overwrite later on
+
+a p1 and p2 class that each change the font or font size so as to be used in specific sections of the HTML only without causing conflicts
+ */
+
+.center {
+  text-align: center;
+}
+
+.buttons {
+  color: #fff;
+  font-family: arial;
+  padding: 10px 10px;
+  border-radius: 10px;  
+}
+
+.p1 {
+  font-family: sans-serif;
+}
+
+.p2 {
+  font-size: 19px;
+}
+
+
+/* A modification made to the body of the HTML that should make it render more nicely on whatever size of window is open */
+
+/* Added padding site wide */
+
+body {
+  background-color: #F0F3F5;
+  width: auto;
+  height: auto;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+/* the header needed to be a specific size and needed to be separated from the description since they were conflicting earlier without it */
+
+body > header > h1 {
+  font-size: 60px;
+  height: 50px;
+}
+
+/* I applied the same principle here so that I can have a better more pleasing to the eye spacing between the paragraph and the nav buttons */
+
+body > header > p {
+  height: 50px;
+}
+
+/* A series of specific modifications I applied to make sure that the website looked how I wanted it to for the spacing and placement of the elements. */
+
+main > h2 {
+  font-family: Langer;
+}
+
+body > main > section > p {
+  width: 70%;
+  margin: auto;
+}
+
+body > main > section > div > ul {
+  width: 40%;
+  margin: auto;
+}
+
+body > main > section > div > ol {
+  width: 10%;
+  margin: auto;
+  list-style-position: inside;
+}
+
+/* The image is originally way too big, so I had to specify a size for it that I felt worked well on both the tiny repl.it screen, and the full screen */
+
+main > div > img {
+  margin: auto;
+  width: 400px;
+  height: 500px;
+  border-radius: 100px;
+}
+
+
+
+
+/* some combination modifications that apply to a few of the elements so that I don't have to write a different css function for each one of them */
+
+main > section > h2,
+main > section > h3 {
+  font-family: Langar;
+  text-align: center;
+
+}
+
+
+header, footer {
+  text-transform: uppercase;
+  font-family: Langar;
+  background-color: rgba(43, 48, 58, 0.9);
+  color: #F0F3F5;
+  text-align: center;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+/* psuedo classes for the links as requested */
+
+div > ol > li > a:link {
+  color: blue;
+}
+
+div > ol > li > a:visited {
+  color: purple;
+}
+
+div > ol > li > a:hover {
+  color: lightblue;
+}
+
+div > ol > li > a:active {
+  color: red;
+}
+
+/* different classes for each type of link since they have different background colours, and having the same colours for them would ruin the way they look */
+
+nav > a:link {
+  color: white;
+}
+
+nav > a:hover {
+  color: lightpink;
+}
+
+nav > a:visited {
+  color: lightblue;
+}
+
+nav > a:active {
+  color: hotpink;
+}
+
+/* different classes for each type of link since they have different background colours, and having the same colours for them would ruin the way they look */
+
+p > a:link {
+  color: blue;
+}
+
+p > a:visited {
+  color: purple;
+}
+
+p > a:hover {
+  color: green;
+}
+
+p > a:active {
+  color: red;
+}
