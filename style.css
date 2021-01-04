@@ -1,4 +1,4 @@
-/* An imported font from google fonts, I wanted something light hearted and not taken too seriously, since I don't yet possess the ability to make this website look up to my standard of elegance and simplicity */
+/* Imported fonts from google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Roboto&family=Special+Elite&display=swap");
 
 @import url('https://fonts.googleapis.com/css?family=Langar&display=swap');
@@ -7,6 +7,9 @@ body {
   background-color: #F0F3F5;
   margin: 0;
 }
+
+/* Header and footer section */
+/* Simple modifications to header and footer */
 
 header,
 footer {
@@ -56,9 +59,25 @@ header nav ul li:last-child a {
   margin-right: 0;
 }
 
+/* Main section */
+/* Font used everywhere on the page */
+
 main {
   font-family: "Roboto";
 }
+
+/* Simple modifications to the forms to make sure they fit the screen well */
+
+form input, 
+form textarea {
+  width: 100%;
+}
+
+form textarea {
+  height: 350px;
+}
+
+/* Classes used for the flexbox implementation */
 
 .group {
   display: flex;
@@ -77,10 +96,14 @@ main {
   flex: 2;
 }
 
+/* Specific modification to images within the group class */
+
 .group img {
   width: 100%;
   border-radius: 15px;
 }
+
+/* Mobile first implementation, so these are the mods needed to look right on desktop or tablet */
 
 @media all and (min-width: 800px) {
   header {
@@ -117,14 +140,5 @@ main {
 
   form label {
   display: block;
-}
-}
-
-form input, 
-form textarea {
-  width: 100%;
-}
-
-form textarea {
-  height: 350px;
+  }
 }
