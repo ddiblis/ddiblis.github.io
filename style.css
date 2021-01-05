@@ -113,7 +113,7 @@ form textarea {
   }
 
   section {
-    padding: 0 10%;
+    padding: 0 100px;
     align-items: center;
   }
 
@@ -140,5 +140,11 @@ form textarea {
 
   form label {
   display: block;
+  }
+
+  .group img {
+  display: block;
+  flex-direction: row;
+  justify-self: center;
   }
 }
